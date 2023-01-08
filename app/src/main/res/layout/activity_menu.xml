@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Menu">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="468dp"
+        android:layout_height="802dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166"
+        app:srcCompat="@drawable/photo_1526506118085_60ce8714f8c5"
+        tools:layout_editor_absoluteX="-23dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="65dp"
+        android:layout_height="38dp"
+        app:srcCompat="@drawable/imagen_2023_01_02_173355908_removebg_preview"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="65dp"
+        android:layout_height="38dp"
+        app:srcCompat="@drawable/imagen_2023_01_02_173355908_removebg_preview"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="327dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="65dp"
+        android:layout_height="38dp"
+        app:srcCompat="@drawable/imagen_2023_01_02_173355908_removebg_preview"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="409dp" />
+
+    <Button
+        android:layout_width="305dp"
+        android:layout_height="64dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/black_ops_one"
+        android:text="Historial de peso"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="314dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="305dp"
+        android:layout_height="64dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/black_ops_one"
+        android:text="Cerrar sesión"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="305dp"
+        android:layout_height="64dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/black_ops_one"
+        android:text="Agregar peso"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="232dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
