@@ -147,7 +147,7 @@
         android:layout_marginTop="40dp"
         android:backgroundTint="@color/yellow"
         android:fontFamily="@font/black_ops_one"
-        android:text="< Volver"
+        android:text="Volver"
         android:textColor="@color/black"
         android:textSize="24sp"
         app:cornerRadius="5dp"
