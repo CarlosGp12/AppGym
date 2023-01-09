@@ -8,18 +8,18 @@ import android.view.View
 import android.widget.Button
 import com.example.appgym.R
 
-class Menu : AppCompatActivity() {
+class Menu_Usuario : AppCompatActivity() {
     lateinit var BtnAgg:Button
     lateinit var BtnHistorial:Button
     lateinit var BtnSalir:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu)
+        setContentView(R.layout.menu_usuario)
         BtnAgg=findViewById(R.id.btnAgregar)
         BtnHistorial=findViewById(R.id.btnHistorial)
         BtnSalir=findViewById(R.id.btnSalir)
         BtnAgg.setOnClickListener {
-            val frm1 = Intent(this@Menu, Formulario::class.java)
+            val frm1 = Intent(this@Menu_Usuario, Nuevo_Peso::class.java)
             startActivity(frm1)
         }
         BtnSalir.setOnClickListener {

@@ -7,19 +7,19 @@ import android.view.View
 import android.widget.Button
 import com.example.appgym.R
 
-class MainActivity : AppCompatActivity() {
+class Login : AppCompatActivity() {
     lateinit var BtnMenu: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.login)
         BtnMenu = findViewById(R.id.btnIniciar)
         BtnMenu.setOnClickListener {
-            val frm2 = Intent(this@MainActivity, Menu::class.java)
+            val frm2 = Intent(this@Login, Menu_Usuario::class.java)
             startActivity(frm2)
         }
     }
     fun irRegistro(view: View) {
-        val frm1 = Intent(this@MainActivity, registro::class.java)
+        val frm1 = Intent(this@Login, Formulario_Registro::class.java)
         startActivity(frm1)
     }
 
