@@ -9,7 +9,7 @@ import com.example.appgym.R
 class RecyclerAdapterClientes(val employeeList: List<Clientes>) : RecyclerView.Adapter<MyViewHolderClientes>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolderClientes {
         val layoutInflater = LayoutInflater.from(parent.context)
-        val view  = layoutInflater.inflate(R.layout.listado_clientes, parent, false)
+        val view  = layoutInflater.inflate(R.layout.row_datos_clientes, parent, false)
         val viewHolder = MyViewHolderClientes(view)
         return viewHolder
     }
