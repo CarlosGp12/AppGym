@@ -139,6 +139,7 @@
         android:layout_marginEnd="66dp"
         android:backgroundTint="@color/yellow"
         android:fontFamily="@font/black_ops_one"
+        android:onClick="irRegistro"
         android:text="Registrase"
         android:textColor="@color/black"
         android:textSize="24sp"
