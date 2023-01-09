@@ -13,28 +13,28 @@
         android:theme="@style/Theme.AppGym"
         tools:targetApi="31">
         <activity
-            android:name=".registro"
+            android:name=".Vista.registro"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Formulario"
+            android:name=".Vista.Formulario"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Menu"
+            android:name=".Vista.Menu"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Vista.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
