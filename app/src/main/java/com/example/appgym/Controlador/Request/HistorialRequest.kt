@@ -1,11 +1,9 @@
-package com.example.appgym.Modelo
+package com.example.appgym.Controlador.Request
 
 import com.google.gson.annotations.SerializedName
-import java.util.Date
+import java.util.*
 
-data class Historial(
-    @SerializedName("id")
-    var id: Int,
+class HistorialRequest (
 
     @SerializedName("usuario")
     var nombre: String,
