@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     android:background="@color/yellow"
     tools:context=".Vista.Formulario">
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="180dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="268dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/black_ops_one"
+        android:text="Agregar"
+        android:textColor="@color/yellow"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -26,14 +39,14 @@
         app:srcCompat="@drawable/mi_proyecto2" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnVolver3"
         android:layout_width="180dp"
         android:layout_height="64dp"
         android:layout_marginStart="128dp"
-        android:layout_marginTop="268dp"
+        android:layout_marginTop="344dp"
         android:backgroundTint="@color/black"
         android:fontFamily="@font/black_ops_one"
-        android:text="Agregar"
+        android:text="Volver"
         android:textColor="@color/yellow"
         android:textSize="24dp"
         app:layout_constraintStart_toStartOf="parent"
