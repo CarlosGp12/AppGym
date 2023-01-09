@@ -3,12 +3,13 @@ package com.example.appgym.Controlador.adapters
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.appgym.Modelo.Clientes
 import com.example.appgym.R
 
-class RecyclerAdapter(val employeeList: List<Productos>) : RecyclerView.Adapter<MyViewHolderClientes>() {
+class RecyclerAdapterClientes(val employeeList: List<Clientes>) : RecyclerView.Adapter<MyViewHolderClientes>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolderClientes {
         val layoutInflater = LayoutInflater.from(parent.context)
-        val view  = layoutInflater.inflate(R.layout.row_productos, parent, false)
+        val view  = layoutInflater.inflate(R.layout.listado_clientes, parent, false)
         val viewHolder = MyViewHolderClientes(view)
         return viewHolder
     }
