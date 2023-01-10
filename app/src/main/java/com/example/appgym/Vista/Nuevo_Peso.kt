@@ -11,7 +11,7 @@ class Nuevo_Peso : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.nuevo_peso)
+        setContentView(R.layout.usuario_agregar_nuevo_peso)
         BtnVolver3 = findViewById(R.id.btnVolver3)
         BtnVolver3.setOnClickListener {
             val frm2 = Intent(this@Nuevo_Peso, Menu_Usuario::class.java)

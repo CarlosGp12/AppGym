@@ -8,14 +8,14 @@ data class Historial(
     var id: Int,
 
     @SerializedName("usuario")
-    var nombre: String,
+    var usuario: String,
 
     @SerializedName("peso")
-    var cantidad: Float,
+    var peso: Float,
 
     @SerializedName("factor_crecimiento")
-    var precio: Float,
+    var factor_crecimiento: Float,
 
     @SerializedName("fecha")
-    var total: Date
+    var fecha: Date
 )

@@ -6,11 +6,11 @@ data class Usuarios(
     var id: Int,
 
     @SerializedName("nombre_usuario")
-    var nombre: String,
+    var nombre_usuario: String,
 
     @SerializedName("contraseña")
-    var cantidad: String,
+    var contraseña: String,
 
     @SerializedName("id_rol")
-    var precio: Int,
+    var id_rol: Int,
 )
