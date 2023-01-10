@@ -9,11 +9,11 @@ data class Clientes(
     var nombre: String,
 
     @SerializedName("peso")
-    var cantidad: Float,
+    var peso: Float,
 
     @SerializedName("altura")
-    var precio: Float,
+    var altura: Float,
 
     @SerializedName("telefono")
-    var total: String
+    var telefono: String
 )

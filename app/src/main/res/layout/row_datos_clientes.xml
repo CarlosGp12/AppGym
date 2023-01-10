@@ -16,7 +16,7 @@
 
 
         <TextView
-            android:id="@+id/txtFecha"
+            android:id="@+id/txtFactorC"
             android:layout_width="360dp"
             android:layout_height="46dp"
             android:layout_marginLeft="20dp"
@@ -36,7 +36,7 @@
             tools:text="peso" />
 
         <TextView
-            android:id="@+id/txtPesos2"
+            android:id="@+id/txtFecha"
             android:layout_width="match_parent"
             android:layout_height="46dp"
             android:layout_marginLeft="20dp"
