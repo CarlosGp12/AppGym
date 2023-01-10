@@ -1,6 +1,8 @@
 package com.example.appgym.Modelo
 
 import com.google.gson.annotations.SerializedName
+import java.util.*
+
 data class Clientes(
     @SerializedName("id")
     var id: Int,
@@ -15,5 +17,8 @@ data class Clientes(
     var altura: Float,
 
     @SerializedName("telefono")
-    var telefono: String
+    var telefono: String,
+
+    @SerializedName("fecha")
+    var fecha: Date
 )

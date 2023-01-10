@@ -14,7 +14,7 @@ class Menu_Usuario : AppCompatActivity() {
     lateinit var BtnSalir:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.menu_usuario)
+        setContentView(R.layout.usuario_menu)
         BtnAgg=findViewById(R.id.btnAgregar)
         BtnHistorial=findViewById(R.id.btnHistorial)
         BtnSalir=findViewById(R.id.btnSalir)

@@ -9,28 +9,25 @@ import com.example.appgym.Modelo.Clientes
 import com.example.appgym.R
 import com.example.appgym.Vista.Nuevo_Peso
 
-open class MyViewHolderClientes(itemView: View) : RecyclerView.ViewHolder(itemView) {
+open class `MyViewHolderPesos-usuario`(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-    lateinit var nombre: TextView
-    lateinit var celular : TextView
+    lateinit var fecha: TextView
+    lateinit var peso: TextView
 
     fun bind(clientes: Clientes) {
-        nombre = itemView.findViewById(R.id.txtNombre)
-        celular = itemView.findViewById(R.id.txtCelular)
+        fecha = itemView.findViewById(R.id.txtFecha2)
+        peso = itemView.findViewById(R.id.txtPesos2)
 
-        nombre.text = clientes?.nombre
-        celular.text = clientes.toString()
-
+        peso.text = clientes.toString()
+        fecha.text = clientes.toString()
 
         //Click para agregar creo
         itemView.setOnClickListener {
             MyMessages.toast(itemView.context, clientes.nombre.toString())
             //Nuevo_Peso es para agregar un nuevo peso ni idea donde
             val intent = Intent(itemView.context, Nuevo_Peso::class.java)
-            intent.putExtra("per_id", nombre.id)
+            intent.putExtra("per_id", peso.id)
             itemView.context.startActivity(intent)
         }
     }
-
-
 }
