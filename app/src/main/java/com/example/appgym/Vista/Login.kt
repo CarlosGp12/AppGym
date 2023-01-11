@@ -22,5 +22,9 @@ class Login : AppCompatActivity() {
         val frm1 = Intent(this@Login, Formulario_Registro::class.java)
         startActivity(frm1)
     }
+    fun iaPrediccion(view: View){
+        val frm1 = Intent(this@Login, iaPrediccion::class.java)
+        startActivity(frm1)
+    }
 
 }
