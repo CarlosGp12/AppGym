@@ -13,6 +13,13 @@
         android:theme="@style/Theme.AppGym"
         tools:targetApi="31">
         <activity
+            android:name=".Vista.iaPrediccion"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Vista.Formulario_Registro"
             android:exported="false">
             <meta-data
