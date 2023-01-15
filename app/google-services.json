@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "405367352611",
+    "project_id": "appgymia",
+    "storage_bucket": "appgymia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405367352611:android:97183d13c518aae1643096",
+        "android_client_info": {
+          "package_name": "com.example.appgym"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "405367352611-2p4chemdseas74tqnvrk19iiojithl6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNUtqXwOahCq6phvx6WSB0BcHQ6RuVQbM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "405367352611-2p4chemdseas74tqnvrk19iiojithl6p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
