@@ -15,7 +15,7 @@ open class MyViewHolderClientes(itemView: View) : RecyclerView.ViewHolder(itemVi
     lateinit var celular : TextView
 
     fun bind(clientes: Clientes) {
-        nombre = itemView.findViewById(R.id.txtNombre)
+        nombre = itemView.findViewById(R.id.txtNombreLista)
         celular = itemView.findViewById(R.id.txtCelular)
 
         nombre.text = clientes?.nombre

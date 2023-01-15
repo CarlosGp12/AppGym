@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="217dp"
-        android:layout_height="424dp"
+        android:layout_width="223dp"
+        android:layout_height="380dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/black_ops_one"
@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/_23313888_1500244943803172_5240225098261431018_n" />
 
     <EditText
-        android:id="@+id/TxtCelular"
+        android:id="@+id/TxtPassword"
         android:layout_width="287dp"
         android:layout_height="48dp"
         android:layout_marginStart="12dp"
@@ -84,9 +84,9 @@
         android:id="@+id/imageView2"
         android:layout_width="85dp"
         android:layout_height="202dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/TxtCelular"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:srcCompat="@drawable/imagen_2023_01_01_220531601_removebg_preview" />
 
@@ -94,7 +94,7 @@
         android:id="@+id/imageView3"
         android:layout_width="226dp"
         android:layout_height="76dp"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="16dp"
         android:layout_marginBottom="352dp"
         app:layout_constraintBottom_toTopOf="@+id/TxtNombre"
         app:layout_constraintStart_toStartOf="parent"
@@ -118,7 +118,7 @@
         android:layout_width="300dp"
         android:layout_height="52dp"
         android:layout_marginStart="66dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="66dp"
         android:backgroundTint="@color/yellow"
         android:fontFamily="@font/black_ops_one"
@@ -127,7 +127,7 @@
         android:textSize="24sp"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintHorizontal_bias="0.095"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -136,7 +136,7 @@
         android:layout_width="294dp"
         android:layout_height="55dp"
         android:layout_marginStart="66dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="96dp"
         android:layout_marginEnd="66dp"
         android:backgroundTint="@color/yellow"
         android:fontFamily="@font/black_ops_one"
@@ -146,7 +146,7 @@
         android:textSize="24sp"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintHorizontal_bias="0.133"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 

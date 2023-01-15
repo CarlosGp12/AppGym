@@ -26,8 +26,8 @@ open class MyViewHolderHistorial(itemView: View) : RecyclerView.ViewHolder(itemV
 
         //Click para agregar creo
         itemView.setOnClickListener {
-            MyMessages.toast(itemView.context, clientes.nombre.toString())
-            //Nuevo_Peso es para agregar un nuevo peso ni idea donde
+            MyMessages.toast(itemView.context, clientes.usuario.toString())
+            //Nuevo_Peso es para agregar un nuevo Speso ni idea donde
             val intent = Intent(itemView.context, Nuevo_Peso::class.java)
             intent.putExtra("per_id", factorC.id)
             itemView.context.startActivity(intent)

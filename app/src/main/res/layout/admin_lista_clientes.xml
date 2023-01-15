@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/btnVolver2"
+        android:id="@+id/btnVolver4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/yellow"
@@ -25,5 +25,5 @@
         android:layout_height="681dp"
         android:layout_marginTop="6dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnVolver2" />
+        app:layout_constraintTop_toBottomOf="@+id/btnVolver4" />
 </androidx.constraintlayout.widget.ConstraintLayout>

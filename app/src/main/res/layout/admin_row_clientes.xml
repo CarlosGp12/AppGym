@@ -16,7 +16,7 @@
 
 
         <TextView
-            android:id="@+id/txtNombre"
+            android:id="@+id/txtNombreLista"
             android:layout_width="362dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -31,7 +31,7 @@
             tools:text="No Name" />
 
         <TextView
-            android:id="@+id/txtCelular"
+            android:id="@+id/txtCelularLista"
             android:layout_width="364dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"

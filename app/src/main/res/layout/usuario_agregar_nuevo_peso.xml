@@ -7,7 +7,7 @@
     android:background="@color/yellow"
     tools:context=".Vista.Nuevo_Peso">
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnAgregarPeso"
         android:layout_width="180dp"
         android:layout_height="64dp"
         android:layout_marginStart="128dp"
@@ -62,7 +62,7 @@
         app:srcCompat="@drawable/mi_proyecto" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/txtNuevopeso"
         android:layout_width="241dp"
         android:layout_height="48dp"
         android:layout_marginStart="100dp"

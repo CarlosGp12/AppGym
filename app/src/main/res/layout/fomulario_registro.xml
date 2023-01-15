@@ -8,7 +8,7 @@
     tools:context=".Vista.Login">
 
     <EditText
-        android:id="@+id/TxtCelular"
+        android:id="@+id/TxtCelularR"
         android:layout_width="287dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/TxtPassword"
+        android:id="@+id/TxtPasswordR"
         android:layout_width="287dp"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
@@ -57,7 +57,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/TxtNombre"
+        android:id="@+id/TxtNombreR"
         android:layout_width="287dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
@@ -84,7 +84,7 @@
         android:textColor="@color/yellow"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TxtCelular" />
+        app:layout_constraintTop_toBottomOf="@+id/TxtCelularR" />
 
     <TextView
         android:id="@+id/textView4"
@@ -97,7 +97,7 @@
         android:textColor="@color/yellow"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TxtNombre" />
+        app:layout_constraintTop_toBottomOf="@+id/TxtNombreR" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -105,7 +105,7 @@
         android:layout_height="218dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="92dp"
-        app:layout_constraintStart_toEndOf="@+id/TxtCelular"
+        app:layout_constraintStart_toEndOf="@+id/TxtCelularR"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/imagen_2023_01_01_220531601_removebg_preview" />
 
