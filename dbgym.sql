@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3308
--- Tiempo de generación: 08-01-2023 a las 22:56:06
+-- Tiempo de generación: 16-01-2023 a las 05:08:09
 -- Versión del servidor: 5.7.36
 -- Versión de PHP: 7.4.26
 
@@ -24,22 +24,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `cliente`
---
-
-DROP TABLE IF EXISTS `cliente`;
-CREATE TABLE IF NOT EXISTS `cliente` (
-  `id` int(12) NOT NULL AUTO_INCREMENT,
-  `nombre` varchar(25) NOT NULL,
-  `peso` float NOT NULL,
-  `altura` float NOT NULL,
-  `telefono` varchar(25) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Estructura de tabla para la tabla `historial`
 --
 
@@ -56,19 +40,6 @@ CREATE TABLE IF NOT EXISTS `historial` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `rol`
---
-
-DROP TABLE IF EXISTS `rol`;
-CREATE TABLE IF NOT EXISTS `rol` (
-  `id` int(12) NOT NULL AUTO_INCREMENT,
-  `rol` varchar(12) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Estructura de tabla para la tabla `usuario`
 --
 
@@ -77,7 +48,7 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre_usuario` varchar(25) NOT NULL,
   `contraseña` varchar(25) NOT NULL,
-  `id_rol` int(12) NOT NULL,
+  `telefono` int(12) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 COMMIT;
