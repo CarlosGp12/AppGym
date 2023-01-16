@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -12,13 +16,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppGym"
         tools:targetApi="31">
-        <activity
+        <!--<activity
             android:name=".Vista.iaPrediccion"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-        </activity>
+        </activity>-->
         <activity
             android:name=".Vista.Formulario_Registro"
             android:exported="false">
@@ -35,6 +39,13 @@
         </activity>
         <activity
             android:name=".Vista.Menu_Usuario"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Vista.Listado_Historial"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

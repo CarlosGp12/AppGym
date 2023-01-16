@@ -8,16 +8,16 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class ApiGym {
 
-    private lateinit var apiService: ApiServiceClientes
+    private lateinit var apiService: ApiService
 
-    fun getApiService(context: Context): ApiServiceClientes {
+    fun getApiService(context: Context): ApiService {
         if (!::apiService.isInitialized) {
             val retrofit = Retrofit.Builder()
                 .baseUrl(Constants.BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(okhttpClient(context))
                 .build()
-            apiService = retrofit.create(ApiServiceClientes::class.java)
+            apiService = retrofit.create(ApiService::class.java)
         }
         return apiService
     }

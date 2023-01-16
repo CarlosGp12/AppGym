@@ -22,13 +22,14 @@ class Menu_Usuario : AppCompatActivity() {
             val frm1 = Intent(this@Menu_Usuario, Nuevo_Peso::class.java)
             startActivity(frm1)
         }
+        BtnHistorial.setOnClickListener {
+            val frm2 = Intent(this@Menu_Usuario, Listado_Historial::class.java)
+            startActivity(frm2)
+        }
         BtnSalir.setOnClickListener {
             finish()
         }
 
     }
 
-    fun Agregar(view: View){
-
-    }
 }

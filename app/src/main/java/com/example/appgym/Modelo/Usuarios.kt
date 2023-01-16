@@ -11,6 +11,6 @@ data class Usuarios(
     @SerializedName("contraseña")
     var contraseña: String,
 
-    @SerializedName("id_rol")
-    var id_rol: Int,
+    @SerializedName("telefono")
+    var telefono: Int,
 )

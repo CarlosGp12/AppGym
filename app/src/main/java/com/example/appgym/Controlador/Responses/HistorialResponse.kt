@@ -1,6 +1,5 @@
 package com.example.appgym.Controlador.Responses
 
-import com.example.appgym.Modelo.Clientes
 import com.example.appgym.Modelo.Historial
 import com.google.gson.annotations.SerializedName
 
