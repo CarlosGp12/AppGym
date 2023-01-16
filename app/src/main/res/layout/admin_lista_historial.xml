@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/yellow"
         android:fontFamily="@font/black_ops_one"
+        android:onClick="volver"
         android:text="Volver"
         android:textColor="@color/black"
         android:textSize="18dp"

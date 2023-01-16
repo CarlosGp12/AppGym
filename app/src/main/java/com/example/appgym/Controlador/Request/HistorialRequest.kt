@@ -5,9 +5,6 @@ import java.util.*
 
 data class HistorialRequest (
 
-    @SerializedName("usuario")
-    var usuario: String,
-
     @SerializedName("peso")
     var peso: Float,
 

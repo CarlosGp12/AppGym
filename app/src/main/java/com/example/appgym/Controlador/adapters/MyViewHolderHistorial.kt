@@ -20,17 +20,17 @@ open class MyViewHolderHistorial(itemView: View) : RecyclerView.ViewHolder(itemV
         peso = itemView.findViewById(R.id.txtPesos)
         fecha = itemView.findViewById(R.id.txtFecha)
 
-        factorC.text = clientes.toString()
-        peso.text = clientes.toString()
-        fecha.text = clientes.toString()
+        factorC.text = clientes?.factor_crecimiento.toString()
+        peso.text = clientes?.peso.toString()
+        fecha.text = clientes?.fecha.toString()
 
         //Click para agregar creo
-        itemView.setOnClickListener {
+        /*itemView.setOnClickListener {
             MyMessages.toast(itemView.context, clientes.usuario.toString())
             //Nuevo_Peso es para agregar un nuevo Speso ni idea donde
             val intent = Intent(itemView.context, Nuevo_Peso::class.java)
             intent.putExtra("per_id", factorC.id)
             itemView.context.startActivity(intent)
-        }
+        }*/
     }
 }

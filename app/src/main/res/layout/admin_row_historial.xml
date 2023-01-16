@@ -16,24 +16,24 @@
 
 
         <TextView
-            android:id="@+id/txtFactorC"
-            android:layout_width="355dp"
-            android:layout_height="46dp"
-            android:layout_marginLeft="20dp"
-            android:fontFamily="@font/black_ops_one"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            tools:text="factor de crecimiento" />
-
-        <TextView
             android:id="@+id/txtPesos"
             android:layout_width="355dp"
             android:layout_height="46dp"
             android:layout_marginLeft="20dp"
             android:fontFamily="@font/black_ops_one"
             android:textColor="@color/black"
-            android:textSize="25dp"
+            android:textSize="20dp"
             tools:text="peso" />
+
+        <TextView
+            android:id="@+id/txtFactorC"
+            android:layout_width="355dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/black_ops_one"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            tools:text="factor de crecimiento" />
 
         <TextView
             android:id="@+id/txtFecha"

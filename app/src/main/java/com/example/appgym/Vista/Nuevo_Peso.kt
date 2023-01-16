@@ -49,7 +49,7 @@ class Nuevo_Peso : AppCompatActivity() {
         val fecha: Date = format.parse(convertidor)
 
         //ApiRest
-        apiUsuario.getApiService(this)
+        /* apiUsuario.getApiService(this)
             .addHistorial(HistorialRequest(usuario, peso, factor_crecimiento, fecha))
             .enqueue(object : Callback<DefaultResponse> {
                 override fun onResponse(
@@ -72,10 +72,11 @@ class Nuevo_Peso : AppCompatActivity() {
                 }
 
             })
-    }
+    }*/
 
-    fun regregar(view: View) {
-        finish()
+        fun regregar(view: View) {
+            finish()
+        }
     }
-
 }
+

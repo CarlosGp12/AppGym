@@ -1,6 +1,7 @@
 package com.example.appgym.Vista
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -74,4 +75,8 @@ class Listado_Historial : AppCompatActivity() {
 
     }*/
 
+
+    fun volver (view: View){
+        finish()
+    }
 }
