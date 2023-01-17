@@ -11,12 +11,14 @@ import com.example.appgym.R
 class Menu_Usuario : AppCompatActivity() {
     lateinit var BtnAgg:Button
     lateinit var BtnHistorial:Button
+    lateinit var BtnIA:Button
     lateinit var BtnSalir:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.usuario_menu)
         BtnAgg=findViewById(R.id.btnAgregar)
         BtnHistorial=findViewById(R.id.btnHistorial)
+        BtnIA=findViewById(R.id.btnIA)
         BtnSalir=findViewById(R.id.btnSalir)
         BtnAgg.setOnClickListener {
             val frm1 = Intent(this@Menu_Usuario, Nuevo_Peso::class.java)
@@ -28,6 +30,10 @@ class Menu_Usuario : AppCompatActivity() {
         }
         BtnSalir.setOnClickListener {
             finish()
+        }
+        BtnIA.setOnClickListener {
+            val frm2 = Intent(this@Menu_Usuario, com.example.appgym.ia::class.java)
+            startActivity(frm2)
         }
 
     }
