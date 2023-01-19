@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Vista.Login">
+
+    <EditText
+        android:id="@+id/TxtCelularR"
+        android:layout_width="287dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:fontFamily="@font/black_ops_one"
+        android:hint="Numero celular"
+        android:inputType="number"
+        android:textColor="@color/brown"
+        android:textColorHint="@color/brown"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/TxtPasswordR"
+        android:layout_width="287dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:fontFamily="@font/black_ops_one"
+        android:hint="Ingrese el password"
+        android:inputType="textPersonName"
+        android:password="true"
+        android:textColor="@color/brown"
+        android:textColorHint="@color/brown"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="277dp"
+        android:layout_height="128dp"
+
+        android:layout_marginTop="136dp"
+        android:fontFamily="@font/black_ops_one"
+        android:text="REGISTRO GYM ASUS"
+
+        android:textColor="@color/yellow"
+        android:textColorHint="@color/black"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TxtUsernameR"
+        android:layout_width="287dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/black_ops_one"
+        android:hint="Ingrese el usuario"
+        android:inputType="textPersonName"
+        android:textColor="@color/brown"
+        android:textColorHint="@color/brown"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="174dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/black_ops_one"
+        android:text="Password:"
+        android:textColor="@color/yellow"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxtCelularR" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="174dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/black_ops_one"
+        android:text="Celular:"
+        android:textColor="@color/yellow"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxtUsernameR" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="85dp"
+        android:layout_height="218dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintStart_toEndOf="@+id/TxtCelularR"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imagen_2023_01_01_220531601_removebg_preview" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/black_ops_one"
+        android:text="Usuario: "
+        android:textColor="@color/yellow"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnResgister"
+        android:layout_width="305dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="324dp"
+        android:layout_marginEnd="66dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/black_ops_one"
+        android:text="Registrar"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="181dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/black_ops_one"
+        android:text="Volver"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:cornerRadius="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
