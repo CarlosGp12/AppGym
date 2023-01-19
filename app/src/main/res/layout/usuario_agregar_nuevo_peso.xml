@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/yellow"
     tools:context=".Vista.Nuevo_Peso">
+
     <Button
         android:id="@+id/btnAgregarPeso"
         android:layout_width="180dp"

@@ -7,10 +7,4 @@ data class HistorialRequest (
 
     @SerializedName("peso")
     var peso: Float,
-
-    @SerializedName("factor_crecimiento")
-    var factor_crecimiento: Float,
-
-    @SerializedName("fecha")
-    var fecha: Date
 )

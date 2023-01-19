@@ -23,7 +23,7 @@ import java.util.*
 class Nuevo_Peso : AppCompatActivity() {
     private lateinit var apiUsuario: ApiGym
     lateinit var TxtPeso: EditText
-    lateinit var BtnAgregarPeso: EditText
+    lateinit var BtnAgregarPeso: Button
     lateinit var BtnVolver3: Button
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -37,20 +37,19 @@ class Nuevo_Peso : AppCompatActivity() {
             val frm2 = Intent(this@Nuevo_Peso, Menu_Usuario::class.java)
             startActivity(frm2)
         }
+
+        BtnAgregarPeso.setOnClickListener {
+            AddPeso()
+        }
     }
 
-    @RequiresApi(Build.VERSION_CODES.N)
     private fun AddPeso() {
-        val usuario = TxtPeso.text.toString()
+
         val peso = TxtPeso.text.toString().toFloat()
-        val factor_crecimiento = TxtPeso.text.toString().toFloat()
-        val convertidor = TxtPeso.text.toString()
-        val format = SimpleDateFormat("yyyy-MM-dd")
-        val fecha: Date = format.parse(convertidor)
 
         //ApiRest
-        /* apiUsuario.getApiService(this)
-            .addHistorial(HistorialRequest(usuario, peso, factor_crecimiento, fecha))
+         apiUsuario.getApiService(this)
+            .addHistorial(HistorialRequest(peso))
             .enqueue(object : Callback<DefaultResponse> {
                 override fun onResponse(
                     call: Call<DefaultResponse>,
@@ -72,11 +71,11 @@ class Nuevo_Peso : AppCompatActivity() {
                 }
 
             })
-    }*/
+    }
 
         fun regregar(view: View) {
             finish()
         }
     }
-}
+
 
