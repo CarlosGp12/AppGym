@@ -53,7 +53,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/TxtNombre"
+        android:id="@+id/TxtUsername"
         android:layout_width="287dp"
         android:layout_height="48dp"
         android:layout_marginStart="12dp"
@@ -78,7 +78,7 @@
         android:textColor="@color/yellow"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TxtNombre" />
+        app:layout_constraintTop_toBottomOf="@+id/TxtUsername" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -96,7 +96,7 @@
         android:layout_height="76dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="352dp"
-        app:layout_constraintBottom_toTopOf="@+id/TxtNombre"
+        app:layout_constraintBottom_toTopOf="@+id/TxtUsername"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/imagen_2023_01_01_220623099_removebg_preview" />
 

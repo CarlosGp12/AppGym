@@ -16,7 +16,7 @@
         android:ems="10"
         android:fontFamily="@font/black_ops_one"
         android:hint="Numero celular"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:textColor="@color/brown"
         android:textColorHint="@color/brown"
         android:textSize="24sp"
@@ -33,6 +33,7 @@
         android:fontFamily="@font/black_ops_one"
         android:hint="Ingrese el password"
         android:inputType="textPersonName"
+        android:password="true"
         android:textColor="@color/brown"
         android:textColorHint="@color/brown"
         android:textSize="24sp"
@@ -57,16 +58,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/TxtNombreR"
+        android:id="@+id/TxtUsernameR"
         android:layout_width="287dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="13dp"
-        android:ems="10"
         android:fontFamily="@font/black_ops_one"
         android:hint="Ingrese el usuario"
-        android:inputType="textPassword"
-        android:password="true"
+        android:inputType="textPersonName"
         android:textColor="@color/brown"
         android:textColorHint="@color/brown"
         android:textSize="24sp"
@@ -97,7 +96,7 @@
         android:textColor="@color/yellow"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TxtNombreR" />
+        app:layout_constraintTop_toBottomOf="@+id/TxtUsernameR" />
 
     <ImageView
         android:id="@+id/imageView2"

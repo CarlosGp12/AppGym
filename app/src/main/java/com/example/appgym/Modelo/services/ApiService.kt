@@ -1,9 +1,11 @@
 package com.example.appgym.Modelo.services
 
 import com.example.appgym.Controlador.Request.HistorialRequest
+import com.example.appgym.Controlador.Request.RegistroRequest
 import com.example.appgym.Controlador.Request.UsuariosRequest
 import com.example.appgym.Controlador.Responses.DefaultResponse
 import com.example.appgym.Controlador.Responses.HistorialResponse
+import com.example.appgym.Controlador.Responses.LoginResponse
 import com.example.appgym.Controlador.Responses.UsuariosResponse
 import retrofit2.Call
 import retrofit2.http.Body
@@ -26,6 +28,14 @@ interface ApiService {
     fun addHistorial(@Body request: HistorialRequest): Call<DefaultResponse>
     @GET("/usuario/add")
     fun addUsuarios(@Body request: UsuariosRequest): Call<DefaultResponse>
+
+    //Registro
+    @POST("/usuario/adduser")
+    fun adduser(@Body request: RegistroRequest): Call<DefaultResponse>
+
+    //Login
+    @POST("/usuario/auth")
+    fun Auth(@Body request: UsuariosRequest): Call<LoginResponse>
 
     //Actualizacion de datos por PUT
     /*@PUT("/update_dato/{id}")
