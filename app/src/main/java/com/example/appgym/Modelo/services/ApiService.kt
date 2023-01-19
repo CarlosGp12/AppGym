@@ -27,7 +27,9 @@ interface ApiService {
     @POST("/historial/add2")
     fun addHistorial2(@Body request: HistorialRequest2): Call<DefaultResponse>
     @GET("/historial/add2")
-    fun getListHistorialUsuario2(): Call<HistorialResponse2>
+    fun getListHistorialUsuario2(): Call<HistorialResponse>
+    @POST("/historial/:usuario")
+    fun enviar(@Body request: HistorialRequest2): Call<DefaultResponse>
     @GET("/historial/:usuario")
     fun getListHistorialUsuario(): Call<HistorialResponse>
 

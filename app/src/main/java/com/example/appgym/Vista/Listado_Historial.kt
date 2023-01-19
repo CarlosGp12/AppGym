@@ -1,16 +1,15 @@
 package com.example.appgym.Vista
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.appgym.Controlador.Request.HistorialRequest
 import com.example.appgym.Controlador.Request.HistorialRequest2
 import com.example.appgym.Controlador.Responses.DefaultResponse
 import com.example.appgym.Controlador.Responses.HistorialResponse
-import com.example.appgym.Controlador.Responses.HistorialResponse2
 import com.example.appgym.Controlador.Util.MyMessages
 import com.example.appgym.Controlador.adapters.RecyclerAdapterHistorial
 import com.example.appgym.Modelo.Historial
@@ -38,6 +37,7 @@ class Listado_Historial : AppCompatActivity() {
         }
     }
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.admin_lista_historial)
@@ -51,7 +51,7 @@ class Listado_Historial : AppCompatActivity() {
 
         Log.v(usuario, "Que es Usuario")
         apihistorial.getApiService(this)
-            .addHistorial2(HistorialRequest2(usuario))
+            .enviar(HistorialRequest2(usuario))
             .enqueue(object : Callback<DefaultResponse> {
                 override fun onResponse(
                     call: Call<DefaultResponse>,
@@ -75,13 +75,13 @@ class Listado_Historial : AppCompatActivity() {
             })
     }
     fun cargarDatos() {
-                apihistorial.getApiService(this).getListHistorialUsuario2()
-            .enqueue(object : Callback<HistorialResponse2> {
+                apihistorial.getApiService(this).getListHistorialUsuario()
+            .enqueue(object : Callback<HistorialResponse> {
                 override fun onResponse(
-                    call: Call<HistorialResponse2>,
-                    response: Response<HistorialResponse2>
+                    call: Call<HistorialResponse>,
+                    response: Response<HistorialResponse>
                 ) {
-                    val liseProducto = response.body()?.historial2
+                    val liseProducto = response.body()?.historial
                     if (liseProducto != null) {
                         recyclerview.apply {
                             layoutManager = LinearLayoutManager(this@Listado_Historial)
@@ -92,7 +92,7 @@ class Listado_Historial : AppCompatActivity() {
                     }
                 }
 
-                override fun onFailure(call: Call<HistorialResponse2>, t: Throwable) {
+                override fun onFailure(call: Call<HistorialResponse>, t: Throwable) {
                     MyMessages.toast(applicationContext, t.toString())
                 }
 
