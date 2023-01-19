@@ -87,8 +87,9 @@ class Formulario_Registro : AppCompatActivity() {
                         if (defaultResponse.error==false){
                             MyMessages.toast(applicationContext,defaultResponse.message)
                             return
-
-
+                        }else{
+                            MyMessages.toast(applicationContext,defaultResponse.message)
+                            return
                         }
                     }else{
                         MyMessages.toast(applicationContext,"Error")

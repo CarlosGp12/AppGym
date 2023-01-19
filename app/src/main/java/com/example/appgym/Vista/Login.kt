@@ -75,24 +75,21 @@ class Login : AppCompatActivity() {
                     call: Call<LoginResponse>,
                     response: Response<LoginResponse>
                 ) {
-                    // MyMessages.toast(applicationContext, response.body().toString() )
+                    //println(MyMessages.toast(applicationContext, response.body().toString() ))
 
                     val defaultResponse = response.body()
                     if (response.body().toString().contains("false")){
 
-                        CoroutineScope(Dispatchers.IO).launch {
-                            frm2()}
+                        if (response.body().toString().contains("usuario")){
+                            //MyMessages.toast(applicationContext, "usuario")
 
-                        /*if (response.body().toString().contains("2")){
-                            MyMessages.toast(applicationContext, "usuario")
-
-//                            CoroutineScope(Dispatchers.IO).launch {
-//                                frm2()
-//                            }
+                            CoroutineScope(Dispatchers.IO).launch {
+                                frm2()
+                 }
                         }else {
                             MyMessages.toast(applicationContext, "Admin")
                         }
-*/
+
                     } else {
                         MyMessages.toast(applicationContext, "Informacion Incorrecta")
                     }
@@ -106,6 +103,10 @@ class Login : AppCompatActivity() {
     }
     fun frm2() {
         val frm2 = Intent(this@Login, Menu_Usuario::class.java)
+
+        frm2.putExtra("username", TxtUsername.id)
+
         startActivity(frm2)
+
     }
 }

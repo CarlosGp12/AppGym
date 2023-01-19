@@ -5,6 +5,6 @@ data class LoginResponse(
     val error: Boolean,
     val message: String,
     val token: String,
-    val rol: Int
+    val rol: String
 
 )

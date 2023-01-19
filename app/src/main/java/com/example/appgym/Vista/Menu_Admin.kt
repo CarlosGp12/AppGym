@@ -8,7 +8,7 @@ import android.view.View
 import android.widget.Button
 import com.example.appgym.R
 
-class Menu_Usuario : AppCompatActivity() {
+class Menu_Admin : AppCompatActivity() {
     lateinit var BtnAgg:Button
     lateinit var BtnHistorial:Button
     lateinit var BtnIA:Button
@@ -20,22 +20,19 @@ class Menu_Usuario : AppCompatActivity() {
         BtnHistorial=findViewById(R.id.btnHistorial)
         BtnIA=findViewById(R.id.btnIA)
         BtnSalir=findViewById(R.id.btnSalir)
-        val dato = intent.getStringExtra("username")
         BtnAgg.setOnClickListener {
-            val frm1 = Intent(this@Menu_Usuario, Nuevo_Peso::class.java)
-            frm1.putExtra("username", dato.toString())
+            val frm1 = Intent(this@Menu_Admin, Nuevo_Peso::class.java)
             startActivity(frm1)
         }
         BtnHistorial.setOnClickListener {
-            val frm2 = Intent(this@Menu_Usuario, Listado_Historial::class.java)
-            frm2.putExtra("username", dato.toString())
+            val frm2 = Intent(this@Menu_Admin, Listado_Historial::class.java)
             startActivity(frm2)
         }
         BtnSalir.setOnClickListener {
             finish()
         }
         BtnIA.setOnClickListener {
-            val frm2 = Intent(this@Menu_Usuario, com.example.appgym.ia::class.java)
+            val frm2 = Intent(this@Menu_Admin, com.example.appgym.ia::class.java)
             startActivity(frm2)
         }
 

@@ -33,6 +33,7 @@ class Nuevo_Peso : AppCompatActivity() {
         BtnVolver3 = findViewById(R.id.btnVolver3)
         TxtPeso = findViewById(R.id.txtNuevopeso)
         BtnAgregarPeso = findViewById(R.id.btnAgregarPeso)
+        val dato = intent.getStringExtra("username")
         BtnVolver3.setOnClickListener {
             val frm2 = Intent(this@Nuevo_Peso, Menu_Usuario::class.java)
             startActivity(frm2)
