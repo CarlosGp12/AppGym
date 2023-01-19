@@ -93,7 +93,6 @@ class Login : AppCompatActivity() {
                             MyMessages.toast(applicationContext, "Admin")
                         }
 */
-
                     } else {
                         MyMessages.toast(applicationContext, "Informacion Incorrecta")
                     }

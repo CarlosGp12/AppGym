@@ -7,4 +7,5 @@ object Constants {
     const val EMPLOYEES_URL = "/"
     const val SHARED_PREF_NAME = R.string.app_name
     const val TAG_LOGS = "ProyectoAppRegistro"
+
 }

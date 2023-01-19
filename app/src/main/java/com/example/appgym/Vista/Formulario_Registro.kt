@@ -36,8 +36,6 @@ class Formulario_Registro : AppCompatActivity() {
         BtnRegistrar = findViewById(btnResgister)
         apiGym = ApiGym()
         BtnVolver.setOnClickListener {
-            //val form = Intent(this@registro, MainActivity::class.java)
-            //startActivity(form)
             finish()
         }
 

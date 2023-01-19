@@ -32,6 +32,7 @@ interface ApiService {
     //Registro
     @POST("/usuario/adduser")
     fun adduser(@Body request: RegistroRequest): Call<DefaultResponse>
+
     //Login
     @POST("/usuario/auth")
     fun Auth(@Body request: UsuariosRequest): Call<LoginResponse>
