@@ -102,9 +102,10 @@ class Login : AppCompatActivity() {
             })
     }
     fun frm2() {
+        val Username = TxtUsername.text.toString().trim()
         val frm2 = Intent(this@Login, Menu_Usuario::class.java)
 
-        frm2.putExtra("username", TxtUsername.id)
+        frm2.putExtra("username", Username)
 
         startActivity(frm2)
 

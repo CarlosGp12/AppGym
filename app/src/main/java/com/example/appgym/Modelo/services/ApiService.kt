@@ -1,12 +1,10 @@
 package com.example.appgym.Modelo.services
 
 import com.example.appgym.Controlador.Request.HistorialRequest
+import com.example.appgym.Controlador.Request.HistorialRequest2
 import com.example.appgym.Controlador.Request.RegistroRequest
 import com.example.appgym.Controlador.Request.UsuariosRequest
-import com.example.appgym.Controlador.Responses.DefaultResponse
-import com.example.appgym.Controlador.Responses.HistorialResponse
-import com.example.appgym.Controlador.Responses.LoginResponse
-import com.example.appgym.Controlador.Responses.UsuariosResponse
+import com.example.appgym.Controlador.Responses.*
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.GET
@@ -26,8 +24,13 @@ interface ApiService {
     //Envio de datos por POST
     @POST("/historial/add")
     fun addHistorial(@Body request: HistorialRequest): Call<DefaultResponse>
-    @GET("/usuario/add")
-    fun addUsuarios(@Body request: UsuariosRequest): Call<DefaultResponse>
+    @POST("/historial/add2")
+    fun addHistorial2(@Body request: HistorialRequest2): Call<DefaultResponse>
+    @GET("/historial/add2")
+    fun getListHistorialUsuario2(): Call<HistorialResponse2>
+    @GET("/historial/:usuario")
+    fun getListHistorialUsuario(): Call<HistorialResponse>
+
 
     //Registro
     @POST("/usuario/adduser")

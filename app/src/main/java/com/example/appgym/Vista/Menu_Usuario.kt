@@ -4,8 +4,10 @@ package com.example.appgym.Vista
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
+import com.example.appgym.Controlador.Util.MyMessages
 import com.example.appgym.R
 
 class Menu_Usuario : AppCompatActivity() {
@@ -29,6 +31,7 @@ class Menu_Usuario : AppCompatActivity() {
         BtnHistorial.setOnClickListener {
             val frm2 = Intent(this@Menu_Usuario, Listado_Historial::class.java)
             frm2.putExtra("username", dato.toString())
+
             startActivity(frm2)
         }
         BtnSalir.setOnClickListener {

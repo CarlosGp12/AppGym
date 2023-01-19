@@ -72,8 +72,8 @@
         android:backgroundTint="#BC9535"
         android:ems="10"
         android:fontFamily="@font/black_ops_one"
-        android:inputType="textPersonName"
-        android:text="Ingrese el nuevo peso"
+        android:hint="Ingrese el nuevo peso"
+        android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 

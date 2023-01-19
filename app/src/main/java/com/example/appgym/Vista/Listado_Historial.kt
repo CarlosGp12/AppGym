@@ -1,11 +1,16 @@
 package com.example.appgym.Vista
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.appgym.Controlador.Request.HistorialRequest
+import com.example.appgym.Controlador.Request.HistorialRequest2
+import com.example.appgym.Controlador.Responses.DefaultResponse
 import com.example.appgym.Controlador.Responses.HistorialResponse
+import com.example.appgym.Controlador.Responses.HistorialResponse2
 import com.example.appgym.Controlador.Util.MyMessages
 import com.example.appgym.Controlador.adapters.RecyclerAdapterHistorial
 import com.example.appgym.Modelo.Historial
@@ -17,6 +22,7 @@ import kotlinx.coroutines.launch
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import kotlin.math.log
 
 class Listado_Historial : AppCompatActivity() {
     private lateinit var apihistorial: ApiGym
@@ -27,6 +33,7 @@ class Listado_Historial : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         CoroutineScope(Dispatchers.IO).launch {
+            enviarDatos()
             cargarDatos()
         }
     }
@@ -38,14 +45,43 @@ class Listado_Historial : AppCompatActivity() {
         recyclerview = findViewById(R.id.Recycler_historial)
     }
 
-    private fun cargarDatos() {
-        apihistorial.getApiService(this).getListHistorial()
-            .enqueue(object : Callback<HistorialResponse> {
+    fun enviarDatos(){
+        val dato = intent.getStringExtra("username")
+        val usuario = dato.toString()
+
+        Log.v(usuario, "Que es Usuario")
+        apihistorial.getApiService(this)
+            .addHistorial2(HistorialRequest2(usuario))
+            .enqueue(object : Callback<DefaultResponse> {
                 override fun onResponse(
-                    call: Call<HistorialResponse>,
-                    response: Response<HistorialResponse>
+                    call: Call<DefaultResponse>,
+                    response: Response<DefaultResponse>
                 ) {
-                    val liseProducto = response.body()?.historial
+                    val defaultResponse = response.body()
+                    if (defaultResponse != null) {
+                        if (response.code() == 200 && defaultResponse.error == false) {
+                            MyMessages.toast(applicationContext, defaultResponse.message)
+                            return
+                        }
+                    } else {
+                        MyMessages.toast(applicationContext, "Error al agregar envia datos vacios")
+                    }
+                }
+
+                override fun onFailure(call: Call<DefaultResponse>, t: Throwable) {
+                    MyMessages.toast(applicationContext, t.toString())
+                }
+
+            })
+    }
+    fun cargarDatos() {
+                apihistorial.getApiService(this).getListHistorialUsuario2()
+            .enqueue(object : Callback<HistorialResponse2> {
+                override fun onResponse(
+                    call: Call<HistorialResponse2>,
+                    response: Response<HistorialResponse2>
+                ) {
+                    val liseProducto = response.body()?.historial2
                     if (liseProducto != null) {
                         recyclerview.apply {
                             layoutManager = LinearLayoutManager(this@Listado_Historial)
@@ -56,25 +92,12 @@ class Listado_Historial : AppCompatActivity() {
                     }
                 }
 
-                override fun onFailure(call: Call<HistorialResponse>, t: Throwable) {
+                override fun onFailure(call: Call<HistorialResponse2>, t: Throwable) {
                     MyMessages.toast(applicationContext, t.toString())
                 }
 
             })
     }
-
-    /* fun menuHome(item: MenuItem) {
-         *//* when (item.getItemId()) {
-             *//**//*R.id.add -> {
-                Toast.makeText(this, "Nuevo Registro", Toast.LENGTH_SHORT).show()*//*
-        val intent = Intent(this, Agregar::class.java).apply {
-
-        }
-        startActivity(intent)
-
-
-    }*/
-
 
     fun volver (view: View){
         finish()

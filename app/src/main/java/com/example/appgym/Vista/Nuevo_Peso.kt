@@ -33,7 +33,7 @@ class Nuevo_Peso : AppCompatActivity() {
         BtnVolver3 = findViewById(R.id.btnVolver3)
         TxtPeso = findViewById(R.id.txtNuevopeso)
         BtnAgregarPeso = findViewById(R.id.btnAgregarPeso)
-        val dato = intent.getStringExtra("username")
+
         BtnVolver3.setOnClickListener {
             val frm2 = Intent(this@Nuevo_Peso, Menu_Usuario::class.java)
             startActivity(frm2)
@@ -45,12 +45,13 @@ class Nuevo_Peso : AppCompatActivity() {
     }
 
     private fun AddPeso() {
-
+        val dato = intent.getStringExtra("username")
+        val usuario = dato.toString()
         val peso = TxtPeso.text.toString().toFloat()
 
         //ApiRest
          apiUsuario.getApiService(this)
-            .addHistorial(HistorialRequest(peso))
+            .addHistorial(HistorialRequest(usuario, peso))
             .enqueue(object : Callback<DefaultResponse> {
                 override fun onResponse(
                     call: Call<DefaultResponse>,
